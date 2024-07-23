@@ -1,7 +1,6 @@
 <?php
 include '../db_connection.php';
 
-// Fetch all adoption requests from the database
 $sql = "SELECT * FROM adoption_requests WHERE status = 'accepted'";
 $result = $conn->query($sql);
 ?>
